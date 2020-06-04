@@ -6,6 +6,21 @@
     android:layout_height="match_parent"
     tools:context=".Flashcard">
 
+    <Button
+        android:id="@+id/next"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="next"
+        android:text=">"
+        android:textAlignment="gravity"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Flashcard"
+        app:layout_constraintTop_toTopOf="@+id/Flashcard" />
+
     <TextView
         android:id="@+id/Flashcard"
         android:layout_width="265dp"
@@ -28,4 +43,42 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Flashcard2"
+        android:layout_width="264dp"
+        android:layout_height="340dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/switch2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Flip"
+        app:layout_constraintBottom_toTopOf="@+id/Flashcard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/previous"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="previous"
+        android:text="&lt;"
+        android:textAlignment="gravity"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/Flashcard"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Flashcard" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -37,8 +37,8 @@
         android:layout_marginTop="16dp"
         android:onClick="saveCard"
         android:text="Save"
-        app:layout_constraintStart_toStartOf="@+id/answer"
-        app:layout_constraintTop_toBottomOf="@+id/answer" />
+        app:layout_constraintStart_toStartOf="@+id/answer2"
+        app:layout_constraintTop_toBottomOf="@+id/answer2" />
 
     <Button
         android:id="@+id/view"
@@ -47,6 +47,31 @@
         android:layout_marginTop="16dp"
         android:onClick="viewCard"
         android:text="View Card"
-        app:layout_constraintEnd_toEndOf="@+id/answer"
+        app:layout_constraintEnd_toEndOf="@+id/answer2"
+        app:layout_constraintTop_toBottomOf="@+id/answer2" />
+
+    <EditText
+        android:id="@+id/question2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Enter a second question"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/answer" />
+
+    <EditText
+        android:id="@+id/answer2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Enter the answer"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question2" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
